@@ -7,7 +7,7 @@ pipeline
       {
         steps
         {
-          git 'url:https://github.com/jayanagavenkatasudhakar/jenkins.git'
+          git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
           echo 'source code pulling sucessfull!......'
         }
        }
