@@ -2,9 +2,9 @@ pipeline
 {
   agent {
         node{
-          lable "agent_madhu" 
-          customeWorkspace 'C:/Jenkins/1001_pipeline'
-          }
+          lable 'agent_madhu' 
+          customeWorkspace 'C:\Jenkins\1001_pipeline'
+            }
         }
         
     stages
