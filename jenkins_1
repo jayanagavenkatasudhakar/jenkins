@@ -3,7 +3,7 @@ pipeline
   agent {
         node{
           lable "agent_madhu" 
-          customeWorkspace 'C:\Jenkins\1001_pipeline'
+          customeWorkspace 'C:/Jenkins/1001_pipeline'
           }
         }
         
