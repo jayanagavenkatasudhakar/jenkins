@@ -3,7 +3,7 @@ pipeline
   agent {node 'agent_madhu'}
     stages
     {
-      stage(pulling)
+      stage('pulling')
       {
         steps
         {
@@ -11,7 +11,7 @@ pipeline
           echo 'source code pulling sucessfull!......'
         }
        }
-       stage(Building)
+       stage("Building")
        {
          steps
          {
