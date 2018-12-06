@@ -1,6 +1,12 @@
 pipeline
 {
-  agent {node {"agent_madhu" customeWorkspace 'C:\Jenkins\1001_pipeline'}}
+  agent {
+        node{
+          lable "agent_madhu" 
+          customeWorkspace 'C:\Jenkins\1001_pipeline'
+          }
+        }
+        
     stages
     {
       stage('pulling')
