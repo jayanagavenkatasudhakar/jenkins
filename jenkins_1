@@ -23,7 +23,7 @@ pipeline
        {
          steps
          {
-            sh 'java Demo'
+            bat """java Demo"""
             echo 'Testing sucessfull!......'
          }
       }
