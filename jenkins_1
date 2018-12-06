@@ -23,7 +23,7 @@ agent agent_madhu
        steps
        {
           bat """ java Demo"""
-          echo 'Testing sucessfull!......
+          echo 'Testing sucessfull!......'
        }
     }
 
