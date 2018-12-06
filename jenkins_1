@@ -1,0 +1,30 @@
+pipeline{
+agent agent_madhu
+  stages
+  {
+    stage(pulling to madhu m/c)
+    {
+      steps
+      {
+        git url:https://github.com/jayanagavenkatasudhakar/jenkins.git
+        echo 'source code pulling sucessfull!......
+      }
+     }
+     stage(Building)
+     {
+       steps
+       {
+          bat """ javac Demo.java"""
+          echo 'Building completed.........'
+       }
+    }
+    stage(Testing)
+     {
+       steps
+       {
+          bat """ java Demo"""
+          echo 'Testing sucessfull!......
+       }
+    }
+
+}
