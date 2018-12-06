@@ -2,7 +2,7 @@ pipeline
 {
   agent {
           node {
-                lable 'agent_madhu'
+                label 'agent_madhu'
                 customeWorkspace 'C:/Jenkins/1001_pipeline'
                 }
           }
