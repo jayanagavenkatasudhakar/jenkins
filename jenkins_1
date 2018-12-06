@@ -6,7 +6,7 @@ agent agent_madhu
     {
       steps
       {
-        git url:https://github.com/jayanagavenkatasudhakar/jenkins.git
+        git 'url:https://github.com/jayanagavenkatasudhakar/jenkins.git'
         echo 'source code pulling sucessfull!......
       }
      }
