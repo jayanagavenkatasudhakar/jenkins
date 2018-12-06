@@ -1,10 +1,10 @@
 pipeline
 {
   agent {
-          node {
+          node [
                 label 'agent_madhu'
                 customeWorkspace 'C:/Jenkins/1001_pipeline'
-                }
+                ]
           }
               //customeWorkspace 'C:/Jenkins/1001_pipeline'
         
