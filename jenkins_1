@@ -1,6 +1,6 @@
 pipeline
 {
-  agent {node 'agent_madhu'}
+  agent {node agent_madhu}
     stages
     {
       stage('pulling')
