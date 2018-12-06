@@ -2,7 +2,7 @@ pipeline{
 agent agent_madhu
   stages
   {
-    stage(pulling to madhu m/c)
+    stage(pulling)
     {
       steps
       {
