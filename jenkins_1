@@ -35,6 +35,9 @@ pipeline
   }
   post
   {
-    bat 'rm Demo.java'
+    always
+    {
+      bat 'rm Demo.java'
+    }
   }
 }
