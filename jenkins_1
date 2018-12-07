@@ -37,7 +37,7 @@ pipeline
   {
     always
     {
-      bat 'rm Demo.java'
+      bat '''rm Demo.java'''
     }
   }
 }
