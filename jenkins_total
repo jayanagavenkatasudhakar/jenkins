@@ -12,6 +12,10 @@ pipeline
 				echo 'source code pulling sucessfully @ Myhili PC'
 			}
 		}
+		stage(transfer_to_ftp_server)
+		{
+			build job:'ftp_files_transfer'
+		}
 				
 	}
 
