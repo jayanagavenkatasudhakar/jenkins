@@ -20,7 +20,7 @@ pipeline
 				ftp '10.1.4.192'
 				username 'jayanagavenkatasudha'
 				password 'Jasmin@7'
-				put 'C:\Jenkins\java_testing\pipelinw\sample'
+				get 'jenkinfile_1'
 				quit
 			}
 		}
