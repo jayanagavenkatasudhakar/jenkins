@@ -12,19 +12,7 @@ pipeline
 				echo 'source code pulling sucessfully @ Myhili PC'
 			}
 		}
-		stage(Transfering_to_Madhu_ftp_server)
-		{
-			agent{ node 'mythili_agent'}
-			steps
-			{
-				ftp '10.1.4.192'
-				username 'jayanagavenkatasudha'
-				password 'Jasmin@7'
-				get 'jenkinfile_1'
-				quit
-			}
-		}
-		
+				
 	}
 
 }
