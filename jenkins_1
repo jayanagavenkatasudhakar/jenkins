@@ -33,4 +33,8 @@ pipeline
          }
       }
   }
+  post
+  {
+    bat 'rm Demo.java'
+  }
 }
