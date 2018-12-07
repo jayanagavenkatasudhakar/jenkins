@@ -3,13 +3,25 @@ pipeline
 	agent 'none'
 	stages
 	{		
-		stage(Pulling_At_Mythili_PC)
+		stage(Pulling_to_Mythili_PC)
 		{	
 			agent {node 'mythili_agent'}
 			steps
 			{
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
 				echo 'source code pulling sucessfully @ Myhili PC'
+			}
+		}
+		stage(Transfering_to_Madhu_ftp_server)
+		{
+			agent{ node 'mythili_agent'}
+			steps
+			{
+				ftp '10.1.4.192'
+				username 'jayanagavenkatasudha'
+				password 'Jasmin@7'
+				put 'C:\Jenkins\java_testing\pipelinw\sample'
+				quit
 			}
 		}
 		
