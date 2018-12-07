@@ -1,11 +1,8 @@
 pipeline
 {
   agent {
-          node [
-                'agent_madhu'
-                customeWorkspace 'C:/Jenkins/1001_pipeline'
-                ]
-          }
+          node ['agent_madhu']
+        }
               //customeWorkspace 'C:/Jenkins/1001_pipeline'
         
     stages
