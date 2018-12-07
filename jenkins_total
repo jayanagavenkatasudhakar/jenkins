@@ -4,7 +4,7 @@ pipeline
 	stages
 	{
 		
-		stage(Pulling to mythili pc)
+		stage(Pulling@MythiliPC)
 		{
 			agent {node 'mythili_agent'}
 			steps
