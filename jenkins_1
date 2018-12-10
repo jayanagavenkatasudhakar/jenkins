@@ -1,9 +1,10 @@
 pipeline
 {
-  agent {
+  agent none
+        //{
           //node 'agent_madhu'
-          none
-        }
+         // none
+      //  }
               //customeWorkspace 'C:/Jenkins/1001_pipeline'
         
     stages
