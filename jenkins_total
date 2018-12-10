@@ -1,19 +1,16 @@
 pipeline
 {
 	agent any
-	ws("E:\work_place\ftp_testing\ftp_downloads")
-	{
-		echo "custome workspace created sucessfully"
-	}
+	
 	stages
 	{		
 		stage(Pulling_to_My_PC)
 		{	
-			//agent {node 'mythili_agent'}
+			
 			steps
 			{
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
-				echo 'source code pulling sucessfully @ Myhili PC'
+				echo 'source code pulling sucessfully to My(Jaya) PC'
 			}
 		}
 			
