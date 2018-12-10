@@ -1,7 +1,10 @@
 pipeline
 {
 	agent any
-	customWorkspace "E:\work_place\ftp_testing\ftp_downloads"
+	ws("E:\work_place\ftp_testing\ftp_downloads")
+	{
+		echo "custome workspace created sucessfully"
+	}
 	stages
 	{		
 		stage(Pulling_to_My_PC)
