@@ -1,9 +1,8 @@
 pipeline
 {
-  agent 'none'
-             
-    stages
-    {
+  agent 'none'          
+  stages
+  {
       stage('pulling')
       {
         steps
