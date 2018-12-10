@@ -8,7 +8,6 @@ pipeline
       {
         steps
         {
-          //customeWorkspace 'C:/Jenkins/1001_pipeline'
           git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
           echo 'source code pulling sucessfull!......'
         }
