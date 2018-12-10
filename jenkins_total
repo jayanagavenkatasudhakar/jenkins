@@ -1,6 +1,7 @@
 pipeline
 {
 	agent any
+	customWorkspace "E:\work_place\ftp_testing\ftp_downloads"
 	stages
 	{		
 		stage(Pulling_to_My_PC)
