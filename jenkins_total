@@ -3,9 +3,9 @@ pipeline
 	agent 'none'
 	stages
 	{		
-		stage(Pulling_to_Mythili_PC)
+		stage(Pulling_to_My_PC)
 		{	
-			agent {node 'mythili_agent'}
+			//agent {node 'mythili_agent'}
 			steps
 			{
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
