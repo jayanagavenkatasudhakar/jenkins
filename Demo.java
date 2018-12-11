@@ -4,7 +4,7 @@ class Demo
     // Prints "Hello, World" to the terminal window. 
     public static void main(String args[]) 
     { 
-        System.out.println("Hello !!! jaya hru \t today Date is 10th Dec 2018"); 
+        System.out.println("Hello !!! jaya 11th Dec 2018\n Showing PIPELINE DEMO"); 
 		System.out.println("Good BYe ..........Mr!!!!!");
     } 
 } 
