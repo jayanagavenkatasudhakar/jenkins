@@ -27,11 +27,10 @@ pipeline
 			agent{ node 'master'}
 			steps
 			{
-				bat ''' xcopy /s/d/y "E:/work_place/ftp_folder/pipeline_demo/Demo.java" "E:/work_place/ftp_testing/down" '''
-				echo "copy sucessful..............OOOOPS"
 				bat ''' javac E:/work_place/ftp_folder/pipeline_demo/Demo.java '''
 				echo "compilation sucessfull>>>>>>>>>>>>"
-				
+				bat ''' java Demo'''
+				echo " Testing also completed !!!Good BYE jaya&&&"
 			}
 		}	
 		
