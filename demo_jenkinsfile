@@ -17,7 +17,7 @@ pipeline
 			agent{node 'master'}
 			steps
 			{
-				bat """ E:\work_place\scripts\madubala_upload_script.bat"""
+				call "E:\work_place\scripts\madubala_upload_script.bat"
 				echo 'Transfering to FTP Server sucessfull........!!!......'
 			}
 		}
