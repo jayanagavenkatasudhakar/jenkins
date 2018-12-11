@@ -29,10 +29,18 @@ pipeline
 			{
 				bat ''' javac E:/work_place/ftp_folder/pipeline_demo/Demo.java '''
 				echo "compilation sucessfull>>>>>>>>>>>>"
+				
+			}
+		}
+		stage(Running_java_classs)
+		{
+			agent{node "master"}
+			steps
+			{
 				bat '''java Demo'''
 				echo " Testing also completed !!!Good BYE jaya&&&"
 			}
-		}	
+		}
 		
 	}
 	
