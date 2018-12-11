@@ -33,6 +33,15 @@ pipeline
 				
 			}
 		}
+		stage(Running_At_MBala_PC)
+		{
+			bat'''
+				cd C:/Jenkins/1001/pipeline_demo
+				C:
+				java Demo
+				'''
+			echo 'YES!!@@$$###&&&&####@@@$$$$!!!Testing completed'
+			
 		
 		
 	}
