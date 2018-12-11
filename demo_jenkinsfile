@@ -27,7 +27,7 @@ pipeline
 			agent{ node "agent_madhu"}
 			steps
 			{
-				bat ''' robocopy /move D:/ftp_folder/pipeline_demo C:/Jenkins/1001/
+				bat ''' robocopy /MOVE D:/ftp_folder/pipeline_demo C:/Jenkins/1001/
 				javac C:/Jenkins/1001/pipeline_demo/Demo.java'''
 				echo "compilation sucessfull @ MADHUBALA PC>>>>>>>>>>>>"
 				
