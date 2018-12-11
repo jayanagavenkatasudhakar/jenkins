@@ -17,7 +17,7 @@ pipeline
 			agent{node 'mythili_agent'}
 			steps
 			{
-				bat"""ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 / C:\jenkins_jaya\workspace\pipeline_demo """
+				bat""" ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 / C:\jenkins_jaya\workspace\pipeline_demo """
 				echo 'Transfering to FTP Server sucessfull........!!!......'
 			}
 		}
