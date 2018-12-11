@@ -27,7 +27,7 @@ pipeline
 			agent{ node 'master'}
 			steps
 			{
-				bat ''' javac E:\work_place\ftp_folder\pipeline_demo/Demo.java '''
+				bat ''' javac E:/work_place/ftp_folder/pipeline_demo/Demo.java '''
 				echo "compilation sucessfull>>>>>>>>>>>>"
 			}
 		}	
