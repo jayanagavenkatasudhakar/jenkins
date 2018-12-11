@@ -17,10 +17,11 @@ pipeline
 			agent{node 'master'}
 			steps
 			{
-				call "E:/work_place/scripts/madubala_upload_script.bat"
+				bat '''ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 / C:/jenkins_jaya/workspace/pipeline_demo '''
 				echo 'Transfering to FTP Server sucessfull........!!!......'
 			}
 		}
+
 		
 		
 	}
