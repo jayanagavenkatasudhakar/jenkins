@@ -28,8 +28,6 @@ pipeline
 			{
 				bat ''' javac E:/work_place/ftp_folder/Demo.java '''
 				echo "compilation sucessfull>>>>>>>>>>>>"
-				//bat'''xcopy  /H /hievry "D:/ftp_folder/pipeline_demo_1" "C:/Jenkins/1001/pipeline_demo"'''
-				//echo 'copying from ftp folder to project folder sucsess!!!....'
 			}
 		}	
 
