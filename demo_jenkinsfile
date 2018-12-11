@@ -26,7 +26,7 @@ pipeline
 			agent{ node 'agent_madhu'}
 			steps
 			{
-				bat''' xcopy /hievry D:/ftp_folder/pipeline_demo C:/Jenkins/1001/pipeline_demo'''
+				bat'''xcopy /hievry D:/ftp_folder/pipeline_demo C:/Jenkins/1001/pipeline_demo'''
 				echo 'copying from ftp folder to project folder sucsess!!!....'
 			}
 		}		
