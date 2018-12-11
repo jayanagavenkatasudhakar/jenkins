@@ -1,0 +1,17 @@
+pipeline
+{
+	agent 'none'
+	stages
+	{
+		stage(pulling source code to Mythili PC )
+		{
+			agent { node "mythili_agent"}
+			steps
+			{
+				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
+				echo ' Pulling source code sucessfully don......!!!!.....'
+			}
+		}
+		
+	}
+}
