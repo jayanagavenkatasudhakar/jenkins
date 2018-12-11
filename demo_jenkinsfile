@@ -12,15 +12,7 @@ pipeline
 				echo ' Pulling source code sucessfully don......!!!!.....'
 			}
 		}
-		stage(Transfering_files_to_Madhubala_pc)
-		{
-			agent{node 'master'}
-			steps
-			{
-				bat '''ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 / C:\jenkins_jaya\workspace\pipeline_demo '''
-				echo 'Transfering to FTP Server sucessfull........!!!......'
-			}
-		}
+		
 		
 	}
 }
