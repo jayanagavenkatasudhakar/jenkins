@@ -29,7 +29,7 @@ pipeline
 			{
 				bat ''' javac E:/work_place/ftp_folder/pipeline_demo/Demo.java '''
 				echo "compilation sucessfull>>>>>>>>>>>>"
-				bat ''' java Demo'''
+				bat '''java Demo'''
 				echo " Testing also completed !!!Good BYE jaya&&&"
 			}
 		}	
