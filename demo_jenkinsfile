@@ -52,11 +52,11 @@ pipeline
 	post
 	{
 		success{
-			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com",
+			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,saikrishna.kavvadevenderreddy@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com",
 			subject: "Jenkins PIPELINE Build SUCESS :${currentBuild.fullDisplayName} ",body:"Yes,We Successfully tested Jenkins declarative pipeline!!!!"
 			}
 		failure{
-			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com",
+			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,saikrishna.kavvadevenderreddy@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com",
 			subject: "Jenkins PIPELINE Build FAILED: ${currentBuild.fullDisplayName}",body:"Sorry , WE failed!!!###!!!!"
 			}
 		
