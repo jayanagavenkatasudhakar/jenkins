@@ -27,24 +27,13 @@ pipeline
 			agent{ node "agent_madhu"}
 			steps
 			{
-				bat '''javac D:/ftp_folder/pipeline_demo/Demo.java'''
-				echo "compilation sucessfull @ MADHUBALA PC>>>>>>>>>>>>"
+				bat ''' robocopy /e "D:/ftp_folder/pipeline_demo" "C:\Jenkins\1001"
+				//bat '''javac D:/ftp_folder/pipeline_demo/Demo.java'''
+				//echo "compilation sucessfull @ MADHUBALA PC>>>>>>>>>>>>"
 				
 			}
 		}
-		stage(Running_java_classs)
-		{
-			agent{node 'agent_madhu'}
-			steps
-			{
-				bat '''
-					cd D:/ftp_folder/pipeline_demo
-					D:
-					java Demo
-					'''
-				echo " Testing also completed @ Madhu Bala PC !!!Good BYE jaya&&&"
-			}
-		}
+		
 		
 	}
 	
