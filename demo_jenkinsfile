@@ -52,12 +52,12 @@ pipeline
 	post
 	{
 		success{
-			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com"
-			subject: "Jenkins PIPELINE Build SUCESS"
+			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com",
+			subject: "Jenkins PIPELINE Build SUCESS",body:"Yes,We Got Result!!!!"
 			}
 		failure{
-			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com"
-			subject: "Jenkins PIPELINE Build FAILED"
+			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com",
+			subject: "Jenkins PIPELINE Build FAILED",body:"Sorry , WE failed!!"
 			}
 		
 	}
