@@ -21,15 +21,7 @@ pipeline
 				echo 'Transfering to FTP Server sucessfull........!!!......'
 			}
 		}
-		stage(Building_At_Madhu_pc)
-		{
-			agent{ node 'agent_madhu'}
-			steps
-			{
-				bat'''xcopy  /H /hievry "D:/ftp_folder/pipeline_demo_1" "C:/Jenkins/1001/pipeline_demo"'''
-				echo 'copying from ftp folder to project folder sucsess!!!....'
-			}
-		}		
+			
 		
 	}
 }
