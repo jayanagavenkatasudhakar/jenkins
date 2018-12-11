@@ -38,9 +38,9 @@ pipeline
 			steps
 			{
 				bat '''
-					cd E:\work_place\ftp_folder\pipeline_demo
+					cd E:/work_place/ftp_folder/pipeline_demo
 					E:
-					java Demo
+					java -cp Demo
 					'''
 				echo " Testing also completed !!!Good BYE jaya&&&"
 			}
