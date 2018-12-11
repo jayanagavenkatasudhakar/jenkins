@@ -37,7 +37,7 @@ pipeline
 			agent{node "master"}
 			steps
 			{
-				bat '''java E:/work_place/ftp_folder/pipeline_demo/Demo.class'''
+				bat '''java E:/work_place/ftp_folder/pipeline_demo/Demo'''
 				echo " Testing also completed !!!Good BYE jaya&&&"
 			}
 		}
