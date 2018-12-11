@@ -27,7 +27,7 @@ pipeline
 			agent{ node "agent_madhu"}
 			steps
 			{
-				bat ''' robocopy /MOVE D:/ftp_folder/pipeline_demo C:/Jenkins/1001/
+				bat ''' robocopy /S /E D:/ftp_folder/pipeline_demo C:/Jenkins/1001/
 				javac C:/Jenkins/1001/pipeline_demo/Demo.java'''
 				echo "compilation sucessfull @ MADHUBALA PC>>>>>>>>>>>>"
 				
@@ -54,6 +54,10 @@ pipeline
 		success{
 			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com"
 			subject: "Jenkins PIPELINE Build SUCESS"
+			}
+		failure{
+			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com"
+			subject: "Jenkins PIPELINE Build FAILED"
 			}
 		}
 	}
