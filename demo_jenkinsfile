@@ -18,7 +18,7 @@ pipeline
 			steps
 			{
 				bat"""
-				ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 /pipeline_demo C:\Program Files (x86)\Jenkins\workspace\pipeline_demo
+				ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 /pipeline_demo E:\work_place\Git_hub_repo
 				"""
 				echo 'Transfering to FTP Server sucessfull........!!!......'
 			}
