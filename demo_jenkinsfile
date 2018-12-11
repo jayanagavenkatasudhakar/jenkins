@@ -18,16 +18,16 @@ pipeline
 			agent{node "mythili_agent"}
 			steps
 			{
-				bat '''ncftpput -R -u jayanagavenkatasudha -p Jasmin@7 10.1.4.192 / C:/jenkins_jaya/workspace/pipeline_demo '''
+				bat '''ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 / C:/jenkins_jaya/workspace/pipeline_demo '''
 				echo 'Transfering to FTP Server sucessfull........!!!......'
 			}
 		}
 		stage(Building_At_Madhu_pc)
 		{
-			agent{ node 'master'}
+			agent{ node 'agent_madhu'}
 			steps
 			{
-				bat ''' javac E:/work_place/ftp_folder/pipeline_demo/Demo.java '''
+				bat ''' javac D:\ftp_folder\pipeline_demo/Demo.java '''
 				echo "compilation sucessfull>>>>>>>>>>>>"
 				
 			}
@@ -38,11 +38,11 @@ pipeline
 			steps
 			{
 				bat '''
-					cd E:/work_place/ftp_folder/pipeline_demo
-					E:
+					cd D:\ftp_folder\pipeline_demo
+					D:
 					java Demo
 					'''
-				echo " Testing also completed !!!Good BYE jaya&&&"
+				echo " Testing also completed @ Madhu PC !!!Good BYE jaya&&&"
 			}
 		}
 		
