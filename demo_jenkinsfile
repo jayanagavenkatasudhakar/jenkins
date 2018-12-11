@@ -17,7 +17,7 @@ pipeline
 			agent{node 'master'}
 			steps
 			{
-				bat '''ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 / C:\Program Files (x86)\Jenkins\workspace\pipeline_demo '''
+				bat '''ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 /pipeline_demo C:\Program Files (x86)\Jenkins\workspace\pipeline_demo '''
 				echo 'Transfering to FTP Server sucessfull........!!!......'
 			}
 		}
