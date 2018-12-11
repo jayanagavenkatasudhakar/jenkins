@@ -34,7 +34,7 @@ pipeline
 		}
 		stage(Running_java_classs)
 		{
-			agent{node "master"}
+			agent{node 'agent_madhu'}
 			steps
 			{
 				bat '''
