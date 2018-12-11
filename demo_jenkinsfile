@@ -35,7 +35,7 @@ pipeline
 		}
 		stage(Running_At_MBala_PC)
 		{
-			agent{node 'agent_madhu'
+			agent{node 'agent_madhu'}
 			steps
 			{
 				bat'''
