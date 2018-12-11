@@ -40,7 +40,7 @@ pipeline
 				bat '''
 					cd E:/work_place/ftp_folder/pipeline_demo
 					E:
-					java -cp Demo
+					java Demo
 					'''
 				echo " Testing also completed !!!Good BYE jaya&&&"
 			}
