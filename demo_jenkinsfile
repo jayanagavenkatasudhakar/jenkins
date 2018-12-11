@@ -24,10 +24,10 @@ pipeline
 		}
 		stage(Building_At_Madhu_pc)
 		{
-			agent{ node 'agent_madhu'}
+			agent{ node "agent_madhu"}
 			steps
 			{
-				bat ''' javac D:/ftp_folder/pipeline_demo/Demo.java '''
+				bat '''javac D:/ftp_folder/pipeline_demo/Demo.java'''
 				echo "compilation sucessfull @ MADHUBALA PC>>>>>>>>>>>>"
 				
 			}
