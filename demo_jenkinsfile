@@ -49,5 +49,13 @@ pipeline
 		
 		
 	}
+	post
+	{
+		success{
+			mail to:"madhusudhanreddy.putluru@jasmin-infotech.com,jayanagavenkatasudhakar.bavirisetty@jasmin-infotech.com,madhubala.subbaiya@jasmin-infotech.com"
+			subject: "Jenkins PIPELINE Build SUCESS"
+			}
+		}
+	}
 	
 }
