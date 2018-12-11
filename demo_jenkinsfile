@@ -21,7 +21,7 @@ pipeline
 				echo 'Transfering to FTP Server sucessfull........!!!......'
 			}
 		}
-		stage(Building@Madhu_pc)
+		stage(Building_At_Madhu_pc)
 		{
 			agent{ node 'agent_madhu'}
 			steps
