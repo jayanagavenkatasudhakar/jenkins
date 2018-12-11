@@ -24,7 +24,7 @@ pipeline
 		}
 		stage(Building_At_Madhu_pc)
 		{
-			agent{ node 'agent_madhu'}
+			agent{ node 'master'}
 			steps
 			{
 				bat ''' javac E:/work_place/ftp_folder/Demo.java '''
