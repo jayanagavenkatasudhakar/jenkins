@@ -2,22 +2,28 @@ pipeline
 {
 	agent { node 'master'}
 	environment{
-		CC='gcc'
+		CC='gcc'	/*user defined @ pipeline level*/
 	}
 	stages{
 		stage(Environment_Example)
 		{	
 			environment{
-				DEBUG_FLAG = '-g'
+				DEBUG_FLAG = '-g'	/*user defined @ stage level*/
+				FTP_SERVER_KEY = credentials(jaya_ftp_server)
+						
 			}
 			steps{
+				/*pre defined printing*/
 				echo "Running Build ID:${env.BUILD_ID} & Build NO:${BUILD_NUMBER} on Jenkins URL:${env.JENKINS_URL}"
 				echo " Running JOB Name:${env.JOB_NAME} "
-				/*//bat ''' compiler:printenv'''
-				//echo ' %CC% %DEBUG_FLAG% '
-				//bat """printenv"""*/
+				
+				
+				/*Printing user defined environment directives*/
 				echo "compiler:${env.CC} ${env.DEBUG_FLAG}"
-			}
+				
+				
+				/*Printing Already configured Jenkins Instance credentials*/
+				echo "FTP SERVER KEY of jenkins Instance: ${FTP_SERVER_KEY}"
 		}
 	}
 }
