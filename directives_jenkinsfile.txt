@@ -4,6 +4,11 @@ pipeline
 	environment{
 		CC='gcc'	/*user defined @ pipeline level*/
 	}
+	/*parameters section should be define only at pipeline level*/
+	parameters
+	{
+		string(name:'jaya',defaultValue:'1001',description:"Sr.System Engineer @ Jasmin Infotech")
+	}
 	stages{
 		stage(Environment_Example)
 		{	
