@@ -41,7 +41,7 @@ pipeline
 				
 				echo "String sudhakar parameter testing:${params.sudhakar}"
 				echo "String jaya parameter testing: ${jaya}"
-				echoe"text1:${text_1}&&&text2:${text_2}"
+				echoe"text1:${params.text_1} &&& text2:${params.text_2}"
 			}
 		}
 	}
