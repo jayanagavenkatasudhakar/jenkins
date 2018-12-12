@@ -16,7 +16,7 @@ pipeline
 				/*//bat ''' compiler:printenv'''
 				//echo ' %CC% %DEBUG_FLAG% '
 				//bat """printenv"""*/
-				echo "compiler:${env.CC env.DEBUG_FLAG}"
+				echo "compiler:${env.CC} ${env.DEBUG_FLAG}"
 			}
 		}
 	}
