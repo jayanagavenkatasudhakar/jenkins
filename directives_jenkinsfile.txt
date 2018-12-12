@@ -10,7 +10,7 @@ pipeline
 		
 		string(name:'sudhakar', defaultValue:'Mouni', description:"From vmd")
 		string(name:'jaya',defaultValue:'1001',description:"Sr.System Engineer @ Jasmin Infotech")
-		text(name:'text_1',defaultValue:' ',description:"Testing text1 parameter)
+		text(name:'text_1',defaultValue:' ',description:"Testing text_1 parameter")
 		text(name:'text_2',defaultValue:'embedded',description:"contains embedded info")
 	}
 	stages{
