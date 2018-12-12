@@ -33,7 +33,9 @@ pipeline
 		}
 		stage(parameters_Printing)
 		{
-			echo " ${params.jaya}"
+			steps{
+				echo " ${params.jaya}"
+			}
 		}
 	}
 }
