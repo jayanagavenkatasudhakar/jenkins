@@ -5,7 +5,7 @@ pipeline
 		stage(Environment_Example)
 		{
 			steps{
-				echo "Running${env.BUILD_ID} & Build NO:${BUILD_NUMBER} on ${env.JENKINS_URL}"
+				echo "Running Build ID:${env.BUILD_ID} & Build NO:${BUILD_NUMBER} on ${env.JENKINS_URL}"
 			}
 		}
 	}
