@@ -31,5 +31,9 @@ pipeline
 				echo "FTP_server_user: ${env.FTP_SERVER_KEY_USR} P/W: ${FTP_SERVER_KEY_PSW} TOTAL:${FTP_SERVER_KEY}"
 				}
 		}
+		stage(parameters_Printing)
+		{
+			echo " ${params.jaya}"
+		}
 	}
 }
