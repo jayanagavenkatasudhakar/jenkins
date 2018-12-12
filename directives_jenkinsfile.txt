@@ -9,7 +9,7 @@ pipeline
 		{	
 			environment{
 				DEBUG_FLAG = '-g'	/*user defined @ stage level*/
-				FTP_SERVER_KEY = credentials(jaya_ftp_server)
+				FTP_SERVER_KEY = credentials('jaya_ftp_server')
 						
 			}
 			steps{
