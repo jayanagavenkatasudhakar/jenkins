@@ -1,12 +1,19 @@
 pipeline
 {
 	agent none
+	environment{
+		CC='gcc'
+	}
 	stages{
 		stage(Environment_Example)
-		{
+		{	
+			environment{
+				DEBUG_FLAG = '-g'
+			}
 			steps{
 				echo "Running Build ID:${env.BUILD_ID} & Build NO:${BUILD_NUMBER} on Jenkins URL:${env.JENKINS_URL}"
 				echo " Running JOB Name:${env.JOB_NAME} "
+				echo ' compiler: ${CC} ${DEBUG_FLAG}'
 			}
 		}
 	}
