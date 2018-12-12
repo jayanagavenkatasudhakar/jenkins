@@ -7,8 +7,9 @@ pipeline
 	/*parameters section should be define only at pipeline level*/
 	parameters
 	{
-		string(name:'jaya',defaultValue:'1001',description:"Sr.System Engineer @ Jasmin Infotech")
+		
 		string(name:'sudhakar',defaultValue:'Mouni',description:"From vmd")
+		string(name:'jaya',defaultValue:'1001',description:"Sr.System Engineer @ Jasmin Infotech")
 	}
 	stages{
 		stage(Environment_Example)
