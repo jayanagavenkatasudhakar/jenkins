@@ -6,7 +6,7 @@ pipeline
 		{
 			steps{
 				echo "Running Build ID:${env.BUILD_ID} & Build NO:${BUILD_NUMBER} on Jenkins URL:${env.JENKINS_URL}"
-				echo " Running JOB Name:"${env.JOB_NAME}" "
+				echo " Running JOB Name:${env.JOB_NAME} "
 			}
 		}
 	}
