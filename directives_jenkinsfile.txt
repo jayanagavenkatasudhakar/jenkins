@@ -34,7 +34,7 @@ pipeline
 		stage(parameters_Printing)
 		{
 			steps{
-				echo " ${params.jaya}"
+				echo "String parameter testing: ${jaya}"
 			}
 		}
 	}
