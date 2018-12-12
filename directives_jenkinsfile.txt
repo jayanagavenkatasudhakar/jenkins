@@ -19,7 +19,7 @@ pipeline
 				
 				
 				/*Printing user defined environment directives*/
-				echo "compiler:${env.CC} ${env.DEBUG_FLAG}"
+				echo "compiler:${CC} ${env.DEBUG_FLAG}"
 				
 				
 				/*Printing Already configured Jenkins Instance credentials*/
