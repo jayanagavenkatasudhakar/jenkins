@@ -23,7 +23,7 @@ pipeline
 				
 				
 				/*Printing Already configured Jenkins Instance credentials*/
-				echo "FTP SERVER KEY of jenkins Instance: ${FTP_SERVER_KEY}"
+				echo "FTP SERVER KEY of jenkins Instance: ${FTP_SERVER_KEY_USR}"
 				}
 		}
 	}
