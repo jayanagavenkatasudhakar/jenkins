@@ -15,7 +15,7 @@ pipeline
 				echo " Running JOB Name:${env.JOB_NAME} "
 				//bat ''' compiler:printenv'''
 				echo ' %CC% %DEBUG_FLAG% '
-				powershell 'printenv'
+				bat 'printenv'
 			}
 		}
 	}
