@@ -1,7 +1,7 @@
 pipeline
 {
 	agent none
-	stage{
+	stages{
 		stage(Environment_Example)
 		{
 			steps{
