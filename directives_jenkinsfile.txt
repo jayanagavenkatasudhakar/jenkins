@@ -8,7 +8,7 @@ pipeline
 	parameters
 	{
 		
-		string(name:'sudhakar',defaultValue:'Mouni',description:"From vmd")
+		string(name:'sudhakar', defaultValue:'Mouni', description:"From vmd")
 		string(name:'jaya',defaultValue:'1001',description:"Sr.System Engineer @ Jasmin Infotech")
 	}
 	stages{
@@ -36,8 +36,9 @@ pipeline
 		stage(parameters_Printing)
 		{
 			steps{
-				echo "String parameter testing: ${jaya}"
-				echo "String sudhakar testing:${params.sudhakar}"
+				
+				echo "String sudhakar parameter testing:${params.sudhakar}"
+				echo "String jaya parameter testing: ${jaya}"
 			}
 		}
 	}
