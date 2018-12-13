@@ -1,3 +1,5 @@
+/*Job discription: single stage job and inside stage we are performing parallel operations to pull two branches seperatly*/
+/* /*uncommented this section , If u want it remove comments and put comments to below section*/
 pipeline
 {
 	agent 'any'
@@ -35,3 +37,43 @@ pipeline
 		}
 	}
 }
+*/
+pipeline
+{
+	agent 'any'
+	stages
+	{
+		parallel "Pullind_Master_Branch":
+		{
+			stage('pulling_master_branch')
+			{
+				steps{
+					dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative2')
+					git url: 'git@gitserver:JIAVBStack.git',
+						  branch:'master',         
+						  credentialsId:'6f4b9c68-dadd-4fab-b989-7a41822efaf4' 
+						  echo " Master pulling sucessssssssssssssssssssssssssssss^^^^^^^^^"
+				}
+			}
+		},
+		"Pulling_SRP_Sourcecode":
+		{
+			stage('Pulling_SRP_Branch')
+			{
+				steps{
+					dir('C:/Program Files (x86)/Jenkins/workspace/srp_jenkins_declarative2')
+					git url: 'git@gitserver:JIAVBStack.git',
+						  branch:'srp',         
+						  credentialsId:'6f4b9c68-dadd-4fab-b989-7a41822efaf4' 
+						  echo " srp_srp_srp pulling sucessssssssssssssssssssssssssssss^^^^^^^^^"
+				}
+			}			
+		},
+		failFast:true
+	}
+}
+
+
+
+
+
