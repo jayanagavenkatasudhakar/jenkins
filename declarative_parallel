@@ -41,15 +41,16 @@ pipeline
 
 pipeline
 {
-	agent 'any'
+agent 'any'
 stages{
-	stage(pulling_both_branches)
+	/*stage(pulling_both_branches)*/
 	{
 		parallel "Pullind_Master_Branch":
 		{
 			stage('pulling_master_branch')
 			{
-				steps{
+				steps
+				{
 					dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative2')
 					git url: 'git@gitserver:JIAVBStack.git',
 						  branch:'master',         
@@ -62,7 +63,8 @@ stages{
 		{
 			stage('Pulling_SRP_Branch')
 			{
-				steps{
+				steps
+				{
 					dir('C:/Program Files (x86)/Jenkins/workspace/srp_jenkins_declarative2')
 					git url: 'git@gitserver:JIAVBStack.git',
 						  branch:'srp',         
