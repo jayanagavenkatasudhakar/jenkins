@@ -42,7 +42,7 @@ pipeline
 pipeline
 {
 	agent 'any'
-	stages
+	stage(pulling_both_branches)
 	{
 		parallel "Pullind_Master_Branch":
 		{
