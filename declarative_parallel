@@ -20,7 +20,7 @@ pipeline
 					git url: 'git@gitserver:JIAVBStack.git',
                         branch:'srp',         
                         credentialsId:'6f4b9c68-dadd-4fab-b989-7a41822efaf4' 
-						echo "SRP Pulling srcesssssssssss$$$$$$$$$"
+						echo "SRP Pulling srcesssssssssssSSSSSSSSS"
 				 }
 			},
 			failFast:true
