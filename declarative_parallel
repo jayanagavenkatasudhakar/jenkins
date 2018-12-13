@@ -47,10 +47,8 @@ stages{
 	{
 		parallel "Pullind_Master_Branch":
 		{
-			stage('pulling_master_branch')
+			steps
 			{
-				steps
-				{
 					dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative2')
 					{
 					git url: 'git@gitserver:JIAVBStack.git',
@@ -58,15 +56,13 @@ stages{
 						  credentialsId:'6f4b9c68-dadd-4fab-b989-7a41822efaf4' 
 						  echo " Master pulling sucessssssssssssssssssssssssssssss^^^^^^^^^"
 					}
-				}
 			}
+			
 		},
 		"Pulling_SRP_Sourcecode":
 		{
-			stage('Pulling_SRP_Branch')
+			steps
 			{
-				steps
-				{
 					dir('C:/Program Files (x86)/Jenkins/workspace/srp_jenkins_declarative2')
 					{
 					git url: 'git@gitserver:JIAVBStack.git',
@@ -74,8 +70,8 @@ stages{
 						  credentialsId:'6f4b9c68-dadd-4fab-b989-7a41822efaf4' 
 						  echo " srp_srp_srp pulling sucessssssssssssssssssssssssssssss^^^^^^^^^"
 					}
-				}
-			}			
+			}
+						
 		},
 		failFast:true
 	}
