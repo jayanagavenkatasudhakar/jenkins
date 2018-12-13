@@ -1,0 +1,30 @@
+pipeline
+{
+	agent 'any'
+	stages
+	{
+		stage(Pulling Master&SRP source code)
+		{
+			parallel 'Master_Branch':{
+				 dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative')
+				 {
+					git url: 'git@gitserver:JIAVBStack.git',
+                        branch:'master',         
+                        credentialsId:'6f4b9c68-dadd-4fab-b989-7a41822efaf4' 
+							echo " Master pulling sucessssssssssssssssssssssssssssss^^^^^^^^^"
+				 }
+			},
+			"SRP_Branch":{
+				dir('C:/Program Files (x86)/Jenkins/workspace/srpppp_jenkins_declarative')
+				 {
+					git url: 'git@gitserver:JIAVBStack.git',
+                        branch:'srp',         
+                        credentialsId:'6f4b9c68-dadd-4fab-b989-7a41822efaf4' 
+						echo "SRP Pulling srcesssssssssss$$$$$$$$$"
+				 }
+			},
+			failFast:true
+			}
+		}
+	}
+}
