@@ -3,7 +3,7 @@ pipeline
 	agent 'any'
 	stages
 	{
-		stage(Pulling Master And SRP source code)
+		stage(Pulling_Master_And_SRP_source_code)
 		{
 			parallel 'Master_Branch':{
 				 dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative')
