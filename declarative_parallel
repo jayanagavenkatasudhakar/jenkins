@@ -1,5 +1,5 @@
 /*Job discription: single stage job and inside stage we are performing parallel operations to pull two branches seperatly*/
-/* /*uncommented this section , If u want it remove comments and put comments to below section*/
+/* //uncommented this section , If u want it remove comments and put comments to below section
 pipeline
 {
 	agent 'any'
@@ -38,6 +38,7 @@ pipeline
 	}
 }
 */
+
 pipeline
 {
 	agent 'any'
