@@ -23,7 +23,7 @@ void func1()
 {
 	echo 'Inside func1>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<'
 }
-empname(String a)
+def empname(String a)
 {
 	echo " Emp name:"
 	echo a
