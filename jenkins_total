@@ -13,7 +13,7 @@ pipeline
 				echo 'source code pulling sucessfully to My(Jaya) PC'
 				func1()
 				empname("EEEECCCCHHHHOOOO jaya NAGA VENKATA SUDHAKAR.Bavirisetty")
-				add(2, 5)
+				add(2)
 			}
 		}
 			
@@ -30,10 +30,9 @@ def empname(String a)
 	echo " Emp name:"
 	echo(a)	
 }
-def add(short a, short b)
+def add(short a)
 {
 	echo(a)
 	echo(b)
-	short total=a+b
-	echo(total)
+	
 }
