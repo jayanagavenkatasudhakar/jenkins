@@ -12,6 +12,7 @@ pipeline
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
 				echo 'source code pulling sucessfully to My(Jaya) PC'
 				func1()
+				empname("jaya")
 			}
 		}
 			
@@ -21,4 +22,9 @@ pipeline
 void func1()
 {
 	echo 'Inside func1>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<'
+}
+def empname(a)
+{
+	echo " Emp name:"
+	bat 'a'
 }
