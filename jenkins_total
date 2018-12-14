@@ -12,7 +12,7 @@ pipeline
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
 				echo 'source code pulling sucessfully to My(Jaya) PC'
 				func1()
-				empname("jaya")
+				empname("jaya NAGA VENKATA SUDHAKAR")
 			}
 		}
 			
@@ -23,7 +23,7 @@ void func1()
 {
 	echo 'Inside func1>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<'
 }
-def empname(String a)
+empname(String a)
 {
 	echo " Emp name:"
 	echo a
