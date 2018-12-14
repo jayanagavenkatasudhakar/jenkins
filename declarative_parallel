@@ -52,7 +52,7 @@ stages{
 			{
 				
 				
-						dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative2')
+						dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative3')
 						
 						git url: 'git@gitserver:JIAVBStack.git',
 							  branch:'master',         
@@ -69,7 +69,7 @@ stages{
 				
 				
 
-					dir('C:/Program Files (x86)/Jenkins/workspace/srp_jenkins_declarative2')
+					dir('C:/Program Files (x86)/Jenkins/workspace/srp_jenkins_declarative3')
 					{
 							git url: 'git@gitserver:JIAVBStack.git',
 								  branch:'srp',         
