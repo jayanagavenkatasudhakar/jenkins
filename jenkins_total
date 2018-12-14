@@ -26,7 +26,7 @@ void func1()
 def empname(String a)
 {
 	
-	println " Emp name:"
+	echo println " Emp name:"
 	echo(a)
 	
 }
