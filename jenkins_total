@@ -30,7 +30,7 @@ def empname(String a)
 	echo " Emp name:"
 	echo(a)	
 }
-def add(short a,int b)
+def add(short a,short b)
 {
-	println(a+b)
+	echo(a+b)
 }
