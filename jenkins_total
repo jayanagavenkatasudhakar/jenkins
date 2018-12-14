@@ -12,7 +12,7 @@ pipeline
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
 				echo 'source code pulling sucessfully to My(Jaya) PC'
 				func1()
-				empname("EEEECCCCHHHHOOOO jaya NAGA VENKATA SUDHAKAR.Bavirisetty")
+				empname("EEEECCCCHHHHOOOO jaya NAGA VENKATA SUDHAKAR.Bavirisetty77777")
 				
 			}
 		}
