@@ -53,12 +53,12 @@ stages{
 				
 				
 						dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative2')
-						{
+						
 						git url: 'git@gitserver:JIAVBStack.git',
 							  branch:'master',         
 							  credentialsId:'6f4b9c68-dadd-4fab-b989-7a41822efaf4' 
 							  echo " Master pulling sucessssssssssssssssssssssssssssss^^^^^^^^^"
-						}
+						
 				
 			},
 			
