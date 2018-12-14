@@ -81,10 +81,10 @@ stages{
 
 			},
 			failFast:true
-		}
-	}|
-  }
-}
+		}//steps
+	}//stage(pulling_both_branches)
+  }//stages
+}//pipeline
 
 
 
