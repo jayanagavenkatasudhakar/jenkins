@@ -25,7 +25,8 @@ void func1()
 }
 def empname(String a)
 {
+	echo off
 	println " Emp name:"
-	println(a)
+	echo(a)
 	
 }
