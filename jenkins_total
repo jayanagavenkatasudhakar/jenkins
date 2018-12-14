@@ -23,7 +23,7 @@ void func1()
 {
 	echo 'Inside func1>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<'
 }
-def empname(sting a)
+def empname(Sting a)
 {
 	echo " Emp name:"
 	bat 'a'
