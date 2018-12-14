@@ -50,7 +50,7 @@ stages{
 			
 			parallel "Pullind_Master_Branch":
 			{
-				stage("Pullind_Master_Branch")
+				stage('Pullind_Master_Branch')
 				{
 						dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative2')
 						{
