@@ -25,6 +25,6 @@ void func1()
 }
 def empname(String a)
 {
-	echo " Emp name:"
-	echo a
+	echo " Emp name:" a
+	
 }
