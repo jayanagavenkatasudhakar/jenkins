@@ -32,7 +32,8 @@ def empname(String a)
 }
 def add(short a,short b)
 {
-	
+	echo(a)
+	echo(b)
 	short total=a+b
 	echo(total)
 }
