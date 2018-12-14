@@ -12,7 +12,7 @@ pipeline
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
 				echo 'source code pulling sucessfully to My(Jaya) PC'
 				func1()
-				empname("jaya NAGA VENKATA SUDHAKAR")
+				empname("jaya NAGA VENKATA SUDHAKAR.Bavirisetty")
 			}
 		}
 			
@@ -25,6 +25,7 @@ void func1()
 }
 def empname(String a)
 {
-	echo " Emp name:" a
+	echo " Emp name:"
+	${a}
 	
 }
