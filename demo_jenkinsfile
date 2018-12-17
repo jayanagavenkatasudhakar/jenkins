@@ -6,7 +6,7 @@ pipeline
 	{
 		stage(pulling_source_code_to_Mythili_PC )
 		{
-			agent { node "mythili_agent"}
+			agent { node "agent_mythili2"}
 			steps
 			{
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
@@ -15,7 +15,7 @@ pipeline
 		}
 		stage(Transfering_files_to_Madhubala_pc)
 		{
-			agent{node "mythili_agent"}
+			agent{node "agent_mythili2"}
 			steps
 			{
 				bat '''ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 / C:/jenkins_jaya/workspace/pipeline_demo '''
