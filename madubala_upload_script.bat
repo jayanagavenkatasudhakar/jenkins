@@ -1,1 +1,0 @@
-ncftpput -R -u madhubala -p Madhu@123 10.1.4.56 / E:\work_place\Git_hub_repo
