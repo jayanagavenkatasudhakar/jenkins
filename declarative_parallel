@@ -9,6 +9,7 @@ pipeline
 			parallel{			
 				stage('Pullind_Master_Branch')
 				{
+					agent{ node 'master'}
 					steps{		
 						dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative222')
 						{	
@@ -24,6 +25,7 @@ pipeline
 
 				stage('Pulling_SRP_Sourcecode')
 				{
+					agent{ node 'master'}
 					steps{
 						dir('C:/Program Files (x86)/Jenkins/workspace/srp_jenkins_declarative222')
 						{
