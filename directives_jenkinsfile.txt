@@ -39,8 +39,8 @@ pipeline
 		{
 			steps{
 				
-				echo "String EmpName parameter testing:${params.sudhakar}"
-				echo "String EmpId_no parameter testing: ${jaya}"
+				echo "String EmpName parameter testing:${params.EmpName}"
+				echo "String EmpId_no parameter testing: ${EmpId_no}"
 				echo "text1:${params.text_1}&&& text2:${params.text_2}"
 			}
 		}
