@@ -6,7 +6,7 @@ pipeline
 	{		
 		stage(Pulling_to_My_PC)
 		{	
-			
+			agent { node 'master'}
 			steps
 			{
 				git 'https://github.com/jayanagavenkatasudhakar/jenkins.git'
