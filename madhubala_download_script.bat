@@ -1,0 +1,1 @@
+ncftpget -R -u madhubala -p Madhu@123 ftp://10.1.4.56/git_jenkins E:\work_place\scripts\new
