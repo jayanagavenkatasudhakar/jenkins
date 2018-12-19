@@ -22,7 +22,7 @@ pipeline
 						
 			}
 			steps{
-				/*pre defined printing*/
+				/*predefined Environmet variables printing*/
 				echo "Running Build IDD:${BUILD_ID} & Build NO:${BUILD_NUMBER} on Jenkinssss UURL:${JENKINS_URL}"
 				echo " Running JOB Name:${env.JOB_NAME} "
 				
