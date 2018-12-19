@@ -8,9 +8,9 @@ pipeline
 	parameters
 	{
 		
-		string(name:'sudhakar', defaultValue:'Mouni', description:"From vmd")
-		string(name:'jaya',defaultValue:'',description:"Sr.System Engineer @ Jasmin Infotech")
-		text(name:'text_1',defaultValue:' ',description:"Testing text_1 parameter")
+		string(name:'Emp_name', defaultValue:'Mouni', description:"From vmd")
+		string(name:'Emp_Id_no',defaultValue:'',description:"Sr.System Engineer @ Jasmin Infotech")
+		text(name:'text_1',defaultValue:' ',description:"Jaya is a Sr.System Engineer in Automotive Department")
 		text(name:'text_2',defaultValue:'emb',description:"contains embedded info")
 	}
 	stages{
