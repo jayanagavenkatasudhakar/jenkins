@@ -8,8 +8,8 @@ pipeline
 	parameters
 	{
 		
-		string(name:'Emp_name', defaultValue:'Mouni', description:"From vmd")
-		string(name:'Emp_Id_no',defaultValue:'',description:"Sr.System Engineer @ Jasmin Infotech")
+		string(name:'EmpName', defaultValue:'Jaya', description:"From vmd")
+		string(name:'EmpId_no',defaultValue:'1001',description:"Sr.System Engineer @ Jasmin Infotech")
 		text(name:'text_1',defaultValue:' ',description:"Jaya is a Sr.System Engineer in Automotive Department")
 		text(name:'text_2',defaultValue:'emb',description:"contains embedded info")
 	}
