@@ -43,7 +43,7 @@ pipeline
 					C:
 					java Demo
 					'''
-				echo 'YES!!@@$$###&&&&####@@@$$$$!!!Testing completed'
+				echo 'YES!!!###&&&&####!!!Testing completed'
 			}
 		}
 		
