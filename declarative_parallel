@@ -10,7 +10,7 @@ pipeline
 				stage('Pullind_Master_Branch')
 				{
 					steps{		
-						dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative4')
+						dir('C:/Program Files (x86)/Jenkins/workspace/master_jenkins_declarative222')
 						{	
 							git url: 'git@gitserver:JIAVBStack.git',
 							branch:'master',         
@@ -25,7 +25,7 @@ pipeline
 				stage('Pulling_SRP_Sourcecode')
 				{
 					steps{
-						dir('C:/Program Files (x86)/Jenkins/workspace/srp_jenkins_declarative4')
+						dir('C:/Program Files (x86)/Jenkins/workspace/srp_jenkins_declarative222')
 						{
 							git url: 'git@gitserver:JIAVBStack.git',
 							branch:'srp',         
